@@ -1,4 +1,47 @@
-.footer{
-  margin-left : 80px;
-  font-size : 18px;
+
+		.grid-container{
+			display:grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-gap: 3px;
+			grid-auto-rows: minmax(100px,auto);
+			border-radius: 10px;
+			border-color: red;
+			
+
+		}
+				.grid-container>div{
+			padding: 2em;
+			background-color: grey;
+		}
+		.grid-container>div:nth-child(even){
+			background-color: white;
+		}
+		
+		#one{
+			border:1px solid grey;
+			border-radius:20px;
+			border-style: ridge;
+			justify-content: center;
+			box-shadow: 2px 2px #888888
+
+		}
+		#sub_grid{
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			align-items: center;
+			grid-gap: 7px;
+		    
+
+
+		}
+		p{
+			text-align: center;
+			font-size: 30px;
+		}
+		.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+
 }
