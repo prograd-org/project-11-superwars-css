@@ -1,0 +1,46 @@
+body {
+    display: flex;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.characters {
+    border: solid lightgrey;
+    padding: 2em;
+    border-radius: 0.5em;
+    align-items: top;
+    margin: 5px;
+    border-width: 1px;
+    text-align: center;
+    height: 250px;
+    width: 150px;
+
+}
+
+
+.heroes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.villians {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+h1 {
+    font-size: 4em;
+    font-weight: lighter;
+}
+
+#score {
+    padding: 10px;
+
+}
