@@ -2,3 +2,50 @@
   margin-left : 80px;
   font-size : 18px;
 }
+
+* {
+  padding: 10px;
+  margin: 0px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 100px 100px 200px 100px 100px ;
+  grid-column-gap: 40px;
+  justify-items: center;
+  align-items: center;
+  position: relative;
+  /*border:solid black 1px;*/
+  background-attachment: fixed;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 120px;
+}
+
+.grid-container div {
+  display: grid;
+  justify-items: center;
+  justify-content: space-between;
+  position: relative;
+  grid-template-columns: min-content;
+  border:solid black 1px;
+  background-attachment: fixed;
+  border-radius: 10px;
+  font-size: 20px;
+  background-color: white;
+  grid-row-gap: 20px;
+}
+
+.grid-container div:first-child {
+  margin-left: 25%;
+}
+​
+.grid-container div:last-child {
+  margin-right: 25%;
+}
+
+
+
+.hero1 {
+  border: 10px;
+}
