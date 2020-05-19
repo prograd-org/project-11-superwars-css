@@ -23,9 +23,6 @@ html, body{
   font-size: 32px;
 }
 
-
-
-
 /* center part */
 .game-war{
   display: flex;
@@ -73,6 +70,10 @@ so that image and content having the spacific height in a range */
   justify-content: space-evenly;
 }
 
+.middleScore{
+  width: 50px;
+}
+
 .game-war .border_box .container .hero-villain1 .player_wrap .caption_player div:first-child{
    font-size: medium;
    text-transform: capitalize;
@@ -86,3 +87,42 @@ so that image and content having the spacific height in a range */
   font-size : 18px;
 }
 
+/*  =================responsive website==============*/
+
+/* This only applied for screen <=730px */
+@media only screen and (max-width: 800px) {
+  .container{
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .player_wrap{
+    background: yellowgreen;
+    border: 2px solid green !important;
+  }
+  .container{
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 625px) {
+  .player_wrap{
+    background: burlywood;
+    border: 2px solid brown !important;
+  }
+  .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .middleScore{
+    margin: 20px 0;
+  }
+  .footer{
+    margin-left: 22px;
+  }
+}
