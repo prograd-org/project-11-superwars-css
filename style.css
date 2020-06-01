@@ -1,4 +1,60 @@
+/*importing google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+/*Resetting css*/
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/*setting default font family and size*/
+
+body{
+  font-size: 10px;
+  font-family:'Nunito Sans', sans-serif;
+  
+}
+
 .footer{
   margin-left : 80px;
   font-size : 18px;
+}
+/*making the container grid*/
+.container{
+  display: grid;
+  grid-template-columns: 3fr 2fr 3fr;/*diving into 3 unequal columns*/
+}
+.heros , .villains,.score{
+  display: flex;/*Making individual card element flex*/
+}
+
+/*selecting card structure*/
+.heros>div,.villains>div{
+  border: 2px solid #d3d3d3;/*setting border*/
+  border-radius: 5px; /*making pointy corners curvy*/
+  margin: 0.3em 0.5em;/*spacing them */
+  padding: 1em 0.5em;
+  font-size: 1.8em;
+}
+.heros{
+  justify-content: flex-end;/*Positioning heroes*/
+}
+.score{
+  justify-content: center;/*centering scoreboard*/
+}
+/*changing font-size of all numbers*/
+.heros>div>p:last-child,.villains>div>p:last-child{
+  font-size: 3em;
+}
+/*font-size of numbers of score board*/
+.score{
+  font-size: 5em;
+}
+/*positioning inside content using flexbox*/
+.heros>div , .villains>div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
