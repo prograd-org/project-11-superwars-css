@@ -1,4 +1,62 @@
-.footer{
-  margin-left : 80px;
-  font-size : 18px;
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 10px;
+}
+
+.footer {
+  margin-left: 300px;
+  font-size: 18px;
+}
+
+.display {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+.hero,
+.Villains {
+  display: grid;
+  grid-template-columns: 150px 50px;
+  padding-top: 10px;
+}
+
+.scorecard {
+  display: grid;
+  grid-template-columns: 20px 20px 20px;
+  font-size: 30px;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-left: 100px;
+}
+
+.points {
+  font-size: 40px;
+  font-weight: 500;
+  margin-left: 35px;
+  align-items: center;
+}
+
+.name {
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 35px;
+  align-items: center;
+}
+
+.hero1,
+.villain1,
+.villain2,
+.hero2 {
+  border: 2px solid gainsboro;
+  width: 135px;
+  border-radius: 10px;
 }
