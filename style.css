@@ -1,4 +1,42 @@
-.footer{
-  margin-left : 80px;
-  font-size : 18px;
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 10px;
+  border: 10px groove ghostwhite;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+  height: 300px;
+  width: 200px;
+  border: 2px solid white;
+  margin: 0 50px;
+}
+
+div {
+  border: 2px solid gainsboro;
+  padding: 10px;
+}
+
+#points {
+  border: none;
+  width: 200px;
+  text-align: center;
+}
+
+h5,
+h1 {
+  margin: 20px;
+}
+
+.footer {
+  margin-top: 300px;
+  margin-left: 80px;
+  font-size: 18px;
 }
