@@ -1,4 +1,56 @@
-.footer{
-  margin-left : 80px;
-  font-size : 18px;
+/* Resetting the deafaults to 0*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Giving width to images of supeheroes so tht they can fit into the card */
+div img {
+  width: 60px;
+  padding: 5px 0 15px 0;
+}
+
+/* Allinging all the item within card div to center horizontally as well as vertically  */
+.card {
+  display: flex;
+  width: 100px;
+  height: 200px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: grey solid 1px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Giving top and bottom margin across the superhero name */
+.name {
+  margin: 5px 0;
+}
+
+/* Giving a 5 column and 1 row grid layout, and each cell within grid has card div*/
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 110px);
+  justify-items: center;
+  width: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+
+.score,
+.points {
+  font-size: 2em;
+}
+
+
+.footer {
+  font-size: 18px;
+  position: absolute;
+  top: 500px;
+  left: 550px;
 }
