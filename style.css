@@ -1,4 +1,66 @@
-.footer{
-  margin-left : 80px;
-  font-size : 18px;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 500px;
+    width: 80%;
+    margin-left: 140px;
+
+
+    justify-items: center;
+}
+
+
+
+#super-heroes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px;
+
+}
+
+#box {
+    border: 2px solid lightgrey;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px lightgray;
+
+}
+
+h5 {
+    text-align: center;
+}
+
+
+.grid-container>div>div {
+    border: 1px solid black;
+    height: 200px;
+    margin: 10px;
+    text-align: center;
+    justify-items: center;
+}
+
+
+
+#score {
+    margin: 30px;
+    font-size: 2em;
+}
+
+#villains {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px;
+}
+
+
+
+
+.footer {
+    margin-left: 80px;
+    font-size: 18px;
 }
