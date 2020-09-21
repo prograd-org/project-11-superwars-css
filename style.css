@@ -1,4 +1,53 @@
-.footer{
-  margin-left : 80px;
-  font-size : 18px;
+* {
+  margin: 0;
+  padding: 0;
 }
+
+h1 {
+  font-size: 50px;
+  font-weight: 400;
+}
+
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 5px 150px;
+  width: 70%;
+}
+
+#points {
+  text-align: center;
+} 
+
+
+#left-side, #right-side {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+#box {
+  border: 2px solid rgb(218, 213, 213);
+  border-radius: 10px;
+  text-align: center;
+  padding: 5px;
+  height: 220px;
+  margin-right: 10px;
+}
+
+
+.footer {
+  margin-left: 80px;
+  font-size: 18px;
+  padding-top: 340px;
+}
+
+
+
