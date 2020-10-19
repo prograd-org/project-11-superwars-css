@@ -1,4 +1,66 @@
-.footer{
-  margin-left : 80px;
-  font-size : 18px;
+.footer {
+  margin-left: 80px;
+  font-size: 18px;
+  margin-top: 200px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: flex-start;
+
+  padding: 10px;
+  font-size: 24px;
+
+}
+
+
+
+.heroes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.heroes div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-style: solid;
+  border-color: grey;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.heroes div p {
+  padding: 0px 20px;
+  text-align: center;
+}
+
+.villians div p {
+  padding: 0px 20px;
+  text-align: center;
+}
+
+.villians {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-right: 100px
+}
+
+.villians div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-style: solid;
+  border-color: grey;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 10px;
 }
