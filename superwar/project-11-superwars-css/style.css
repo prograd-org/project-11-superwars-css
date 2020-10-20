@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 500px;
+  width: 80%;
+  margin: 100px;
+  box-shadow: 10px 10px 10px 10px lightgrey;
+  border: 1px solid black;
+  justify-items: center;
+}
+
+#super-heroes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 20px;
+}
+
+.grid-container>div>div {
+  border: 1px solid black;
+  height: 200px;
+  margin: 10px;
+  text-align: center;
+  justify-items: center;
+}
+
+#score {
+  margin: 30px;
+}
+
+#villains {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 20px;
+}
+
+
+.footer {
+  margin-left: 80px;
+  font-size: 18px;
+}
