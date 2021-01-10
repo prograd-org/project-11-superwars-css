@@ -1,4 +1,60 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  display: flex;
+  height: 100vh;
+  display: grid;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: auto 10px auto;
+  
+}
+
+.col{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.card{
+  display: grid;
+  border: black solid;
+  border-radius: 20px;
+  justify-items: center;
+  padding: 20px;
+  margin: 20px;
+  
+}
+.hero_name{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: large;
+  font-weight: 500;
+  padding: 30px;
+}
+
+.score{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: xx-large;
+  font-weight: 500;
+  padding: 30px;
+}
+
+.main_score{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 100px;
+  font-weight: 500;
+ 
+}
+
 .footer{
-  margin-left : 80px;
-  font-size : 18px;
+  
+
+  justify-self: center;
+
+  
 }
