@@ -2,3 +2,37 @@
   margin-left : 80px;
   font-size : 18px;
 }
+
+.grid{
+  display:grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  padding: 50px;
+}
+
+.characters{
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  grid-column-gap:30px;
+}
+
+#heroes{
+  justify-items: right;
+}
+
+#villians{
+  justify-items: left;
+}
+
+.character{
+  display: grid;
+  justify-items: center;
+  border: 2px solid gray;
+  border-radius: 20px;
+  box-shadow: 2px 2px grey;
+  padding: 10px;
+}
+
+#score{
+  text-align: center;
+  font-size: 30px;
+}
