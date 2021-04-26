@@ -1,4 +1,41 @@
 .footer{
   margin-left : 80px;
   font-size : 18px;
+  padding-top:100px;
+}
+.whole{
+  display:grid;
+  grid-template-rows: 250px;
+  grid-template-columns: 400px 200px 400px;
+  grid-column-gap:20px;
+  justify-content: center;
+}
+.column1{
+  display:grid;
+  grid-template-rows: 290px;
+  grid-template-columns: 140px 140px;
+  grid-column-gap:10px;
+  justify-content: center;
+  padding-top: 10px;
+}
+.subColumn{
+  border-radius: 10px;
+  border:2px solid lightgrey;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:10px;
+}
+.column2{
+  text-align: center;
+  font-size: 50px;
+}
+.score{
+  font-size: 50px;
+  
+}
+p{
+  font-size: 20px;
+  text-align: center;
 }
