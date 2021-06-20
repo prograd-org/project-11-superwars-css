@@ -1,4 +1,8 @@
-.arena {
+div{
+  text-align: center;
+}
+
+.container {
   display: grid;
   grid-template-columns: 2fr 1fr 2fr;
   grid-column-gap: 1em;
@@ -46,12 +50,20 @@
   font-size: xx-large;
 
 }
-.spidey{
+.spidey1{
   flex-direction: column;
  background-color: white;
    border-radius: 10px;
    padding: 20px;
    border:2px solid lightgrey;
    background-position: center;
-   width:15%;
+   width:70%;
+}
+.strength{
+  text-align: center;
+  font-size: 30px;
+}
+span{
+  line-height: 4px;
+  text-align: center;
 }
