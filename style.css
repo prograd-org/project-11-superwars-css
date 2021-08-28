@@ -1,4 +1,52 @@
+
+*
+{
+  margin: 0;
+  padding: 0;
+}
 .footer{
   margin-left : 80px;
   font-size : 18px;
+}
+
+#scoreboard 
+{
+  margin:4rem;
+  display: grid;
+  grid-template-columns: repeat(3,2fr);
+  
+
+}
+#scoreboard div
+{
+  padding: 1rem;
+  
+  text-align: center;
+  
+}
+.num
+{
+  font-size: 3rem;
+}
+
+#first,#second
+{
+  display : grid;
+  grid-template-columns: repeat(2,2fr);
+  grid-gap: 2rem;
+  
+}
+
+#first   div , #second div
+{
+
+  border: solid;
+
+  border-radius: 2%;
+  border-color: rgb(192, 189, 189);
+}
+#points 
+{
+    font-size: 4rem;
+  margin-left: .5rem;
 }
