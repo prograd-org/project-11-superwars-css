@@ -19,6 +19,14 @@
   margin-top: 10px;
 }
 
+.heros {
+  justify-content: end;
+}
+
+.villans {
+  justify-content: start;
+}
+
 .score {
   text-align: center;
   font-size: xxx-large;
