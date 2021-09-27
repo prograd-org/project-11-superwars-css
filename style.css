@@ -3,7 +3,6 @@
   font-size : 18px;
 }
 .container{
-  margin-top: 100px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
