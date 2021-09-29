@@ -1,4 +1,35 @@
+.container
+{
+  height: 70%;
+  margin-top: 50px;
+  justify-content: space-evenly;
+  display: flex;
+  margin-bottom: 600px;
+}
+.container>div
+{
+  padding: 30px;
+  border: 1px solid black;
+}
+.score-value
+{
+  font-size: 30px;
+  font-weight: bold;
+}
 .footer{
   margin-left : 80px;
   font-size : 18px;
 }
+
+#score
+{
+  padding-top: 20px;
+  border: none;
+}
+
+.score
+{
+  text-align: center;
+
+}
+
