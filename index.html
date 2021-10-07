@@ -6,12 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Super Wars</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
-    
-    <footer class="footer">Made with <img src="/images/Vector.svg"> by ProGrad</footer>
+    <div class="container">
+        <div class="row">
+           <!--Spiderman-->
+            <div class="col">
+                <img class="profilePic" src="./images/super-1.png" alt="picture" height="60px" width="60px">
+                <span class="name" id="super-heros"></span> 
+                <div class="row-score" id="team1">    
+                    <span class="col1"></span>
+                </div> 
+            </div>
+            <!--Wonder Women-->
+            <div class="col">
+                <img  class="profilePic" src="./images/super-3.png" alt="picture" height="60px" width="60px">
+                <span class="name" id="super-villans"></span>
+                <div class="row-score" id="team2">
+                    <span class="col1"></span>
+                </div>
+            </div>
+            <!--Score -->
+            <div class="col2">
+                <div class="row score1">
+                    <span id="team-1-score">5</span>
+                    <span>-</span>
+                    <span id="team-2-score">0</span>
+                </div>
+            </div>
+            <!--Captain America-->
+            <div class="col">
+                <img class="profilePic" src="./images/super-2.png" alt="picture" height="60px" width="60px">
+                <span class="name" id="super-heros1"></span>
+                <div class="row-score" id="team3">
+                    <span class="col1"></span>
+                </div>   
+            </div>
+            <!--Gem Women-->
+            <div class="col">
+                <img  class="profilePic" src="./images/super-4.png" alt="picture" height="60px" width="60px">
+                <span class="name" id="super-villans2"></span>
+                <div class="row-score" id="team4">
+                    <span class="col1"></span>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">Made with <img src="/images/Vector.svg"> by ProGrad</footer>
+    </div>
+    <script src="./app.js"></script>
 </body>
-
 </html>

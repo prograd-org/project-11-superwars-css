@@ -1,4 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap');
+
+*{
+    font-family: 'Libre Baskerville', serif;
+}
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.container{
+  background-color: white;
+  width: 800px;
+  margin-top: 1px;
+  display: flex;
+  padding: 100px;
+  align-self: center;
+  align-items: flex-start;
+  justify-content: center;
+  align-content: space-around;
+}
+.profilePic{
+   display: flex;
+   align-content: center;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.name{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: x-small;
+}
+.row-score{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.col{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 1px solid black;
+  border-style: groove;  
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+}
+.container> .row{
+  justify-content: space-evenly;
+  width: 100%;
+}
+
 .footer{
-  margin-left : 80px;
+  margin-top: 400px;
+  margin-left : 5px;
   font-size : 18px;
 }
