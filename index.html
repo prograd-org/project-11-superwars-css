@@ -1,17 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Super Wars</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-    
-    <footer class="footer">Made with <img src="/images/Vector.svg"> by ProGrad</footer>
-</body>
+  <body>
+    <div class="gridcontainer">
+      <div class="flexcontainer">
+        <div id="hero1">
+          <img id="hero1img" src="images/super-1.png" alt="" />
+          <h4 id="hero1scr">1</h4>
+        </div>
 
+        <div id="hero2">
+          <img id="hero2img" src="images/super-2.png" alt="" />
+          <h4 id="hero2scr">1</h4>
+        </div>
+      </div>
+      <div class="flexcontainer"><h1 id="score">0-0</h1></div>
+      <div class="flexcontainer">
+        <div id="villian2">
+          <img id="villian2img" src="images/super-10.png" />
+          <h4 id="villian2scr">1</h4>
+        </div>
+
+        <div id="villian3">
+          <img id="villian3img" src="images/super-11.png" />
+          <h4 id="villian3scr">1</h4>
+        </div>
+      </div>
+    </div>
+    <button onclick="changethis()"><h1>PLAY</h1></button>
+  </body>
+  <script>
+    let count1 = 0;
+    let count2 = 0;
+    function changethis() {
+      var num1 = Math.floor(Math.random() * 20) + 1;
+      document.getElementById("villian2img").src =
+        "images/super-" + num1 + ".png";
+      var num2 = Math.floor(Math.random() * 20) + 1;
+      document.getElementById("villian3img").src =
+        "images/super-" + num2 + ".png";
+      var num3 = Math.floor(Math.random() * 20) + 1;
+      document.getElementById("hero2img").src = "images/super-" + num3 + ".png";
+      var num4 = Math.floor(Math.random() * 20) + 1;
+      document.getElementById("hero1img").src = "images/super-" + num4 + ".png";
+      var scr1 = Math.floor(Math.random() * 20) + 1;
+      document.getElementById("hero1scr").innerHTML = scr1;
+      var scr2 = Math.floor(Math.random() * 20) + 1;
+      document.getElementById("hero2scr").innerHTML = scr2;
+      var scr3 = Math.floor(Math.random() * 20) + 1;
+      document.getElementById("villian2scr").innerHTML = scr3;
+      var scr4 = Math.floor(Math.random() * 20) + 1;
+      document.getElementById("villian3scr").innerHTML = scr4;
+      let w = scr1 + scr2;
+      let x = scr3 + scr4;
+      if (w > x) {
+        count1++;
+      } else {
+        count2++;
+      }
+      document.getElementById("score").innerHTML = count1 + "-" + count2;
+      if (count1 >= 10) {
+        count1 = 0;
+        count2 = 0;
+        document.getElementById("score").innerHTML = count1 + "-" + count2;
+        alert("hero wins");
+      } else if (count2 >= 10) {
+        count1 = 0;
+        count2 = 0;
+        document.getElementById("score").innerHTML = count1 + "-" + count2;
+        alert("villian wins");
+      }
+    }
+  </script>
 </html>
