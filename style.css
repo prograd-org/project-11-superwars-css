@@ -2,3 +2,32 @@
   margin-left : 80px;
   font-size : 18px;
 }
+.container{
+  display: flex;
+  justify-content: center;
+
+}
+.card{
+  display: flex;
+  margin:5px;
+  border: 2px solid gray;
+  padding: 5px;
+  border-radius: 7%;
+  align-items: center;
+  flex-direction: column;
+  
+}
+.score-hero{
+  font-size:2em;
+}
+.score{
+  display: flex;
+  justify-content: center;
+  font-size: 2em;
+  padding: 20px;
+  flex-grow: 0.2;
+}
+.footer{
+  display: flex;
+  justify-content: center;
+}
