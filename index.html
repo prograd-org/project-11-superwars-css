@@ -1,17 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Super Wars</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Super Wars</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
     
-    <footer class="footer">Made with <img src="/images/Vector.svg"> by ProGrad</footer>
-</body>
-
-</html>
+    <body>
+    
+        <footer class="footer">Made with <img src="/images/Vector.svg"> by ProGrad</footer>
+    </body>
+        <link rel="stylesheet" href="style.css" />
+        <script>        
+        let count1 = 0;
+        let count2 = 0;
+        function myFunction() {
+            if(count2 == 9){
+                document.getElementById("score").innerHTML = "PLAYER 2 WINS !!!";    
+                alert("PLAYER 2 WINS !!!")
+                count2 = 0;
+                count1 = 0;
+                document.getElementById("image1").src ="images/super-1.png";
+                document.getElementById("stat1").innerHTML = "0";
+                document.getElementById("image2").src ="images/super-1.png";
+                document.getElementById("stat2").innerHTML = "0";
+                document.getElementById("image3").src ="images/super-1.png";
+                document.getElementById("stat3").innerHTML = "0";
+                document.getElementById("image4").src ="images/super-1.png";
+                document.getElementById("stat4").innerHTML = "0";
+                return;
+            }
+            else if(count1 == 9){
+                document.getElementById("score").innerHTML = "PLAYER 1 WINS !!!";
+                alert("PLAYER 1 WINS !!!")
+                count1 = 0;
+                count2 = 0;
+                document.getElementById("image1").src ="images/super-1.png";
+                document.getElementById("stat1").innerHTML = "0";
+                document.getElementById("image2").src ="images/super-1.png";
+                document.getElementById("stat2").innerHTML = "0";
+                document.getElementById("image3").src ="images/super-1.png";
+                document.getElementById("stat3").innerHTML = "0";
+                document.getElementById("image4").src ="images/super-1.png";
+                document.getElementById("stat4").innerHTML = "0";
+                return;
+            }
+            let x = Math.floor((Math.random() * 20) +1);
+            let y = Math.floor((Math.random() * 100) +1);
+            document.getElementById("image1").src ="images/super-"+x+".png";
+            document.getElementById("stat1").innerHTML = y;
+            x = Math.floor((Math.random() * 20) +1);
+            let z = Math.floor((Math.random() * 100) +1);
+            document.getElementById("image2").src ="images/super-"+x+".png";
+            document.getElementById("stat2").innerHTML = z;
+            x = Math.floor((Math.random() * 20) +1);
+            let v = Math.floor((Math.random() * 100) +1);
+            document.getElementById("stat3").innerHTML = v;
+            document.getElementById("image3").src ="images/super-"+x+".png";
+            x = Math.floor((Math.random() * 20) +1);
+            let w = Math.floor((Math.random() * 100) +1);
+            document.getElementById("stat4").innerHTML = w;
+            document.getElementById("image4").src ="images/super-"+x+".png";
+            w = w+v;
+            y = y+z;
+            if(w>y)
+                count2=count2+1;
+            else 
+                count1 = count1+1;
+            document.getElementById("score").innerHTML = count1+"-"+count2;
+        } 
+        </script>
+      </head>
+    
+      <body>
+        <div class="gridcontainer">
+          <div class="flexcontainer">
+            <div id="hero1"><img id="image1" src="images/super-1.png" alt="" />
+                <h1 id="stat1"></h1></div>
+            <div id="hero2"><img id="image2" src="images/super-2.png" alt="" />
+                <h1 id="stat2"></h1></div>
+          </div>
+          <div class="flexcontainer"><h1 id="score" style="font-size: 100px;">0-0</h1></div>
+          <div class="flexcontainer">
+            <div id="villian2"><img id="image3" src="images/super-10.png" alt="" /><h1 id="stat3"></h1></div>
+            <div id="villian3"><img id="image4" src="images/super-11.png" alt="" /><h1 id="stat4"></h1></div>
+          </div>
+        </div>
+        <button style="margin-left: 42%;"onclick="myFunction()"><h1>SELECT HEROES</h1></button>
+      </body>
+    </html>
